@@ -68,3 +68,4 @@
 xterm*font: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 xterm*boldMode: false
 
+XLock.mode:                blank

@@ -1,42 +1,42 @@
-*background: #232323
-*foreground: #A0A0A0
-*cursorColor: #a0a0a0
+xterm*background: #232323
+xterm*foreground: #A0A0A0
+xterm*cursorColor: #a0a0a0
 
-*colorBD:    #CFCFCF
-*colorUL:    #A0A0A0
-*colorIT:    #686868
+xterm*colorBD:    #CFCFCF
+xterm*colorUL:    #A0A0A0
+xterm*colorIT:    #686868
 
 !BLK
-*color0:     #303030
-*color8:     #686868
+xterm*color0:     #303030
+xterm*color8:     #686868
 
 !RED
-*color9:     #FFA7DA
-*color1:     #D370A3
+xterm*color9:     #FFA7DA
+xterm*color1:     #D370A3
 
 !GRN
-*color10:    #A3D572
-*color2:     #6D9E3F
+xterm*color10:    #A3D572
+xterm*color2:     #6D9E3F
 
 !BLU
-*color12:    #98CBFE
-*color4:     #6095C5
+xterm*color12:    #98CBFE
+xterm*color4:     #6095C5
 
 !YEL
-*color11:    #EFBD8B
-*color3:     #B58858
+xterm*color11:    #EFBD8B
+xterm*color3:     #B58858
 
 !CYN
-*color14:    #75DAA9
-*color6:     #3BA275
+xterm*color14:    #75DAA9
+xterm*color6:     #3BA275
 
 !MAG
-*color13:    #E5B0FF
-*color5:     #AC7BDE
+xterm*color13:    #E5B0FF
+xterm*color5:     #AC7BDE
 
 !WHT
-*color7:     #CFCFCF
-*color15:    #FFFFFF
+xterm*color7:     #CFCFCF
+xterm*color15:    #FFFFFF
 
 !*background: #3a3a3a
 !*foreground: #f0f0f0

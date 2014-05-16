@@ -1,4 +1,2 @@
-xmodmap -e "remove Lock = Caps_Lock"
-xmodmap -e "add Mod4 = Caps_Lock"
-
-xrdb -merge ~/.Xdefaults
+xkbcomp .xkb $DISPLAY
+xrdb -merge .Xdefaults

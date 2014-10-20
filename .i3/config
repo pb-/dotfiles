@@ -25,6 +25,7 @@ bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
+bindsym $mod+x exec i3lock -c 000000
 
 # change focus
 bindsym $mod+h focus left
@@ -63,6 +64,7 @@ bindsym $mod+f fullscreen
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout default
+bindsym $mod+c layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -138,3 +140,5 @@ mode "resize" {
 bar {
         status_command i3status
 }
+
+exec_always --no-startup-id setxkbmap -layout de(nodeadkeys) -option caps:super

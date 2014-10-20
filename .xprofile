@@ -1,2 +1,3 @@
-xkbcomp .xkb $DISPLAY
+# xkbcomp .xkb $DISPLAY
+setxkbmap -option caps:super
 xrdb -merge .Xdefaults

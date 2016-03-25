@@ -1,3 +1,6 @@
+! disable subpixel font anti-aliasing (no colored fonts, please)
+Xft.rgba: none
+
 xterm*background: #232323
 xterm*foreground: #A0A0A0
 xterm*cursorColor: #a0a0a0

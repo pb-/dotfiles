@@ -17,7 +17,12 @@ do
 
 	if [ -e "$link_name" ]
 	then
-		echo "skip: $link_name (file exists)"
+		if [ -L "$link_name" ]
+		then
+			echo "managed?: $link_name"
+		else
+			echo "manual: $link_name"
+		fi
 	else
 		mkdir -p "$(dirname "$link_name")"
 		echo -n "link: "

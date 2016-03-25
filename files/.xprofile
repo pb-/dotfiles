@@ -5,4 +5,4 @@ xinput -disable 11
 
 nm-applet &
 chromium-browser &
-sleep 3s && redshift &
+redshift &

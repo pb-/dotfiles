@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Set up links from $HOME to the individual files in this
 # repository (unless the link names already exist)

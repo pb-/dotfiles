@@ -1,3 +1,8 @@
 setxkbmap -option caps:super
 xrdb -merge .Xdefaults
 xset m 3 0
+xinput -disable 11
+
+nm-applet &
+chromium-browser &
+sleep 3s && redshift &

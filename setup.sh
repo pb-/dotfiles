@@ -4,6 +4,12 @@
 # repository (unless the link names already exist)
 #
 
+def="\033[0m"
+gray="\033[90m"
+green="\033[92m"
+yellow="\033[93m"
+cyan="\033[96m"
+
 set -e
 
 cd "$(dirname "$0")/files"
@@ -15,17 +21,22 @@ do
 	link_name="$HOME/$rel_name"
 	target="$pwd/$rel_name"
 
-	if [ -e "$link_name" ]
+	if [ -f "$link_name" ] || [ -L "$link_name" ]
 	then
 		if [ -L "$link_name" ]
 		then
-			echo "managed?: $link_name"
-		else
-			echo "manual: $link_name"
+			link_target="$(readlink -m "$link_name")"
+			if [ "$link_target" == "$target" ]
+			then
+				echo -e " ${green}managed: $gray$rel_name$def"
+				continue
+			fi
 		fi
+
+		echo -e "  ${yellow}manual: $gray$rel_name$def"
 	else
 		mkdir -p "$(dirname "$link_name")"
-		echo -n "link: "
-		ln -rsv "$target" "$link_name"
+		echo -e "    ${cyan}link: $gray$rel_name$def"
+		ln -rs "$target" "$link_name"
 	fi
 done

@@ -35,3 +35,4 @@ set background=dark
 
 set mouse=v
 set number
+set ruler

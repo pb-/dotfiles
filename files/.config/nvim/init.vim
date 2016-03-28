@@ -36,3 +36,6 @@ set background=dark
 set mouse=v
 set number
 set ruler
+
+" make jedi globally available in every virtualenv
+let g:python_host_prog='/usr/bin/python'

@@ -15,7 +15,7 @@ set -e
 cd "$(dirname "$0")/files"
 pwd=$(pwd)
 
-find . -type f | while read rel_name
+find . -type f | sort | while read rel_name
 do
 	rel_name="${rel_name##./}"
 	link_name="$HOME/$rel_name"

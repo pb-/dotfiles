@@ -16,6 +16,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'morhetz/gruvbox'
 NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'Valloric/YouCompleteMe'
 
 " Required:
 call neobundle#end()

@@ -15,12 +15,14 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'morhetz/gruvbox'
+NeoBundle 'othree/html5.vim'
 
 NeoBundle 'Shougo/deoplete.nvim'
 NeoBundle 'zchee/deoplete-go', {'build': {'unix': 'make'}}
 NeoBundle 'zchee/deoplete-jedi'
 
 NeoBundle 'fatih/vim-go'
+NeoBundle 'lumiliet/vim-twig'
 
 " Required:
 call neobundle#end()

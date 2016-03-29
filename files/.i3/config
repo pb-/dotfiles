@@ -13,7 +13,8 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
@@ -30,7 +31,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run -fn Inconsolata-11
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -163,6 +164,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86WLAN exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 
 bindsym $mod+z exec --no-startup-id xset dpms force standby
 bindsym $mod+x exec i3lock -c 202020
@@ -175,3 +177,21 @@ bindsym $mod+i nop history_forward
 bindsym $mod+minus move scratchpad
 
 # no laptop config after this line
+# multi-display specific setup
+bindsym $mod+Control+l focus output left
+bindsym $mod+Control+h focus output right
+
+workspace 1 output HDMI-1
+workspace 2 output HDMI-1
+workspace 3 output HDMI-1
+workspace 4 output HDMI-1
+workspace 5 output HDMI-1
+workspace 6 output HDMI-2
+workspace 7 output HDMI-2
+workspace 8 output HDMI-2
+workspace 9 output HDMI-2
+workspace 10 output HDMI-2
+
+mouse_warping none
+
+bindsym $mod+Shift+f fullscreen global

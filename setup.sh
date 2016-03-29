@@ -23,20 +23,27 @@ do
 
 	if [ -f "$link_name" ] || [ -L "$link_name" ]
 	then
+		if [ "$(dirname "$rel_name")" == '.' ]
+		then
+			fmt_name="$def$rel_name"
+		else
+			fmt_name="$gray$(dirname "$rel_name")/$def$(basename "$rel_name")"
+		fi
+
 		if [ -L "$link_name" ]
 		then
 			link_target="$(readlink -m "$link_name")"
 			if [ "$link_target" == "$target" ]
 			then
-				echo -e " ${green}managed: $gray$rel_name$def"
+				echo -e " ${green}managed: $fmt_name$def"
 				continue
 			fi
 		fi
 
-		echo -e "  ${yellow}manual: $gray$rel_name$def"
+		echo -e "  ${yellow}manual: $fmt_name$def"
 	else
 		mkdir -p "$(dirname "$link_name")"
-		echo -e "    ${cyan}link: $gray$rel_name$def"
+		echo -e "    ${cyan}link: $fmt_name$def"
 		ln -rs "$target" "$link_name"
 	fi
 done

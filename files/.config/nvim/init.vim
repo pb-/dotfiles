@@ -40,3 +40,6 @@ set ruler
 
 " make jedi globally available in every virtualenv
 let g:python_host_prog='/usr/bin/python'
+
+" disable YCM for python and let jedi handle it
+let g:ycm_filetype_blacklist={'python': 1}

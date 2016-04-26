@@ -5,3 +5,4 @@ setlocal listchars=trail:·,tab:»·
 
 map <F2> :!flake8 %<cr>
 map <F3> :!isort %<cr>
+inoremap <F4> import pdb; pdb.set_trace()

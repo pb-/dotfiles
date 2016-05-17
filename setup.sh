@@ -21,14 +21,15 @@ do
 	link_name="$HOME/$rel_name"
 	target="$pwd/$rel_name"
 
+	if [ "$(dirname "$rel_name")" == '.' ]
+	then
+		fmt_name="$def$rel_name"
+	else
+		fmt_name="$gray$(dirname "$rel_name")/$def$(basename "$rel_name")"
+	fi
+
 	if [ -f "$link_name" ] || [ -L "$link_name" ]
 	then
-		if [ "$(dirname "$rel_name")" == '.' ]
-		then
-			fmt_name="$def$rel_name"
-		else
-			fmt_name="$gray$(dirname "$rel_name")/$def$(basename "$rel_name")"
-		fi
 
 		if [ -L "$link_name" ]
 		then

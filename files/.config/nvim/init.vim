@@ -29,7 +29,7 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
 syntax on
 colorscheme gruvbox
 set background=dark

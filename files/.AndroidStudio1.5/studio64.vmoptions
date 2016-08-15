@@ -1,2 +1,0 @@
-# disable subpixel font anti aliasing
--Dawt.useSystemAAFontSettings=on

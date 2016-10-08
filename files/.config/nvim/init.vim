@@ -41,6 +41,9 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 
+nnoremap <C-j> 3j3<C-e>
+nnoremap <C-k> 3k3<C-y>
+
 " make jedi globally available in every virtualenv
 let g:python_host_prog='/usr/bin/python'
 

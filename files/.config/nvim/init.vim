@@ -43,6 +43,10 @@ set tabstop=4
 
 nnoremap <C-j> 3j3<C-e>
 nnoremap <C-k> 3k3<C-y>
+nnoremap <A-j> :m .+1<CR>
+nnoremap <A-k> :m .-2<CR>
+vnoremap <A-j> :m '>+1<CR>gv
+vnoremap <A-k> :m '<-2<CR>gv
 
 " make jedi globally available in every virtualenv
 let g:python_host_prog='/usr/bin/python'

@@ -15,8 +15,12 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'morhetz/gruvbox'
-NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'Valloric/YouCompleteMe'
+
+NeoBundle 'Shougo/deoplete.nvim'
+NeoBundle 'zchee/deoplete-go', {'build': {'unix': 'make'}}
+NeoBundle 'zchee/deoplete-jedi'
+
+NeoBundle 'fatih/vim-go'
 
 " Required:
 call neobundle#end()
@@ -50,6 +54,8 @@ vnoremap <A-k> :m '<-2<CR>gv
 
 " make jedi globally available in every virtualenv
 let g:python_host_prog='/usr/bin/python'
+let g:deoplete#enable_at_startup=1
 
-" disable YCM for python and let jedi handle it
-let g:ycm_filetype_blacklist={'python': 1}
+" close preview window when leaving insert mode
+autocmd InsertLeave * pclose
+

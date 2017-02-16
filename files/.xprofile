@@ -1,6 +1,7 @@
 setxkbmap -option caps:super
 xrdb -merge .Xdefaults
 xset m 3 0
+xset r rate 330 40
 xinput -disable 11
 
 nm-applet &

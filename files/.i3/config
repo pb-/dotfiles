@@ -172,5 +172,6 @@ bindsym $mod+u exec --no-startup-id sudo pm-suspend
 
 bindsym $mod+o nop history_backward
 bindsym $mod+i nop history_forward
+bindsym $mod+minus move scratchpad
 
 # no laptop config after this line

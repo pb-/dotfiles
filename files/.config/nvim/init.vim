@@ -53,6 +53,9 @@ nnoremap <A-k> :m .-2<CR>
 vnoremap <A-j> :m '>+1<CR>gv
 vnoremap <A-k> :m '<-2<CR>gv
 
+imap <ESC> <NOP>
+inoremap jk <ESC>
+
 " make jedi globally available in every virtualenv
 let g:python_host_prog='/usr/bin/python'
 let g:deoplete#enable_at_startup=1

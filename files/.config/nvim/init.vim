@@ -45,6 +45,11 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set showcmd
+set list
+set listchars=tab:▸\ ,trail:•
+
+" webpack hot reloading breaks otherwise
+set backupcopy=yes
 
 nnoremap <C-j> 3j3<C-e>
 nnoremap <C-k> 3k3<C-y>

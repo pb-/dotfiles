@@ -1,0 +1,17 @@
+# This keyboard layout tries to emulate the US ANSI layout on
+# a physical ISO layout.
+#
+# enable with
+#  $ setxkbmap iso2ansi
+#
+# (/etc/default/keyboard does not work as of 16.04, see
+#  https://bugs.launchpad.net/ubuntu/+source/console-setup/+bug/1612951)
+
+xkb_symbols "iso2ansi" {
+    include "us(basic)"
+    name[Group1]= "English (turn ISO layout to ANSI)";
+
+    key <LSGT> {	[ Shift_L		]	};
+    key <RTRN> {	[ backslash,	bar	]	};
+    key <BKSL> {	[ Return		]	};
+};

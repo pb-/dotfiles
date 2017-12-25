@@ -1,6 +1,11 @@
 # This keyboard layout tries to emulate the US ANSI layout on
 # a physical ISO layout.
 #
+# The effects of this mapping are:
+#  - the key right to the left shift key is another left shift key
+#  - the return key is backslash/bar
+#  - the lower key of the two keys left to the enter key is return
+#
 # enable with
 #  $ setxkbmap iso2ansi
 #

@@ -60,6 +60,8 @@ vnoremap <A-k> :m '<-2<CR>gv
 
 imap <ESC> <NOP>
 inoremap jk <ESC>
+cmap <ESC> <NOP>
+cnoremap jk <C-c>
 
 " make jedi globally available in every virtualenv
 let g:python_host_prog='/usr/bin/python'

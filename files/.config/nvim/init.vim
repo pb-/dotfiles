@@ -47,6 +47,10 @@ set tabstop=4
 set showcmd
 set list
 set listchars=tab:▸\ ,trail:•
+set directory=/tmp//
+set ignorecase
+set smartcase
+set clipboard+=unnamed
 
 " webpack hot reloading breaks otherwise
 set backupcopy=yes

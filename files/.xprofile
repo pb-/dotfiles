@@ -1,4 +1,3 @@
-setxkbmap iso2ansi
 setxkbmap -option caps:super
 xrdb -merge .Xdefaults
 xset m 3 0

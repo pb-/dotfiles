@@ -9,3 +9,4 @@ alias cat='bat -p'
 alias gd='cd ~/code/go/src/github.com/pb-'
 
 # no global aliases after this line
+alias dcc='docker-compose'

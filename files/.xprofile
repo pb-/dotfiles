@@ -1,4 +1,4 @@
-setxkbmap -option caps:super
+xkbcomp -I.xkb .xkb/keymap.xkb $DISPLAY 2> /dev/null
 xrdb -merge .Xdefaults
 xset m 3 0
 xset r rate 330 40

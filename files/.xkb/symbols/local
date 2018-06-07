@@ -1,0 +1,19 @@
+partial modifier_keys
+xkb_symbols "winmod5" {
+    key <LWIN>  { [ ISO_Level3_Shift ] };
+    modifier_map Mod5 { ISO_Level3_Shift };
+};
+
+partial alphanumeric_keys
+xkb_symbols "arrows" {
+    key <AC01> { [ a, A,  Home,  Home ] };
+    key <AD03> { [ e, E,   End,   End ] };
+
+    key <AD07> { [ u, U, Prior, Prior ] };
+    key <AD09> { [ o, O,  Next,  Next ] };
+
+    key <AC06> { [ h, H,  Left,  Left ] };
+    key <AC07> { [ j, J,  Down,  Down ] };
+    key <AC08> { [ k, K,    Up,    Up ] };
+    key <AC09> { [ l, L, Right, Right ] };
+};

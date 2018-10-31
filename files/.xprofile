@@ -5,5 +5,5 @@ xset r rate 330 40
 xinput -disable 11
 
 nm-applet &
-chromium-browser &
 redshift &
+xss-lock -- i3lock -n -c 202020 &

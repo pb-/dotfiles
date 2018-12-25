@@ -17,10 +17,18 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'morhetz/gruvbox'
 
 NeoBundle 'Shougo/deoplete.nvim'
-NeoBundle 'zchee/deoplete-go', {'build': {'unix': 'make'}}
 NeoBundle 'zchee/deoplete-jedi'
 
-NeoBundle 'fatih/vim-go'
+" Golang
+" NeoBundle 'zchee/deoplete-go', {'build': {'unix': 'make'}}
+" NeoBundle 'fatih/vim-go'
+
+" Elm
+NeoBundle 'ElmCast/elm-vim'
+
+" Clojure
+NeoBundle 'tpope/vim-fireplace'
+NeoBundle 'kien/rainbow_parentheses.vim'
 
 " Required:
 call neobundle#end()

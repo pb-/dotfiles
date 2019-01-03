@@ -1,1 +1,1 @@
-map <F2> :%!python -m json.tool<cr>
+map <C-s> :%!python -m json.tool<cr>

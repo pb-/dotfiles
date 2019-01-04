@@ -10,3 +10,5 @@ inoremap <C-s> import pdb; pdb.set_trace()
 " disable annoying double indentation after {, (, \, etc.
 let g:pyindent_open_paren = '&sw'
 let g:pyindent_continue = '&sw'
+
+set formatoptions-=t

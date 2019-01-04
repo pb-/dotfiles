@@ -1,4 +1,4 @@
-xkbcomp -I.xkb .xkb/keymap.xkb $DISPLAY 2> /dev/null
+. .kbd
 xrdb -merge .Xdefaults
 xset m 3 0
 xset r rate 330 40
@@ -6,4 +6,4 @@ xinput -disable 11
 
 nm-applet &
 redshift &
-xss-lock -- i3lock -n -c 202020 &
+xss-lock -- i3lock -c 202020 &

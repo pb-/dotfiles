@@ -1,0 +1,3 @@
+xkbcomp -I.xkb .xkb/keymap.xkb $DISPLAY 2> /dev/null
+xset m 3 0
+xset r rate 330 40

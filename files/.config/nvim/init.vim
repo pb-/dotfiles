@@ -20,8 +20,8 @@ NeoBundle 'Shougo/deoplete.nvim'
 NeoBundle 'zchee/deoplete-jedi'
 
 " Golang
-" NeoBundle 'zchee/deoplete-go', {'build': {'unix': 'make'}}
-" NeoBundle 'fatih/vim-go'
+NeoBundle 'zchee/deoplete-go', {'build': {'unix': 'make'}}
+NeoBundle 'fatih/vim-go'
 
 " Elm
 NeoBundle 'ElmCast/elm-vim'

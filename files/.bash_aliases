@@ -6,4 +6,6 @@ alias gfg='git ls-files | grep -i'
 alias we='curl wttr.in'
 alias cat='bat -p'
 
+alias gd='cd ~/code/go/src/github.com/pb-'
+
 # no global aliases after this line

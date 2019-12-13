@@ -10,3 +10,5 @@ alias gd='cd ~/code/go/src/github.com/pb-'
 
 # no global aliases after this line
 alias dcc='docker-compose'
+alias gygdev='~/.gygvenv/bin/gygdev'
+alias gygkube='~/.gygvenv/bin/gygkube'

@@ -1,0 +1,6 @@
+ACTION=="add" \
+, ATTRS{idVendor}=="04d9" \
+, ATTRS{idProduct}=="8009" \
+, ENV{DISPLAY}=":0" \
+, ENV{XAUTHORITY}="/run/user/1000/gdm/Xauthority" \
+, RUN+="/usr/bin/xset r rate 330 40"

@@ -77,10 +77,7 @@ cmap <ESC> <NOP>
 cnoremap jk <C-c>
 
 " make jedi globally available in every virtualenv
-let g:python_host_prog='/usr/bin/python'
-let g:python3_host_prog='/usr/bin/python3'
 let g:deoplete#enable_at_startup=1
 
 " close preview window when leaving insert mode
 autocmd InsertLeave * pclose
-

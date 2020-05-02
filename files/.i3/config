@@ -174,4 +174,6 @@ bindsym $mod+o nop history_backward
 bindsym $mod+i nop history_forward
 bindsym $mod+minus move scratchpad
 
+exec --no-startup-id caffeine
+
 # no laptop config after this line

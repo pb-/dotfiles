@@ -25,15 +25,16 @@ xkb_keymap {
 
     key <PRSC> { [ Super_R ] };
 
+    # AC06..09 -> H..L
     key <AC06> { overlay1 = <LEFT> };
     key <AC07> { overlay1 = <DOWN> };
     key <AC08> { overlay1 =   <UP> };
     key <AC09> { overlay1 = <RGHT> };
 
-    key <AC01> { overlay1 = <HOME> };
-    key <AD03> { overlay1 =  <END> };
-
-    key <AD07> { overlay1 = <PGUP> };
-    key <AD09> { overlay1 = <PGDN> };
+    # AD06..09 -> Y..O
+    key <AD06> { overlay1 = <HOME> };
+    key <AD07> { overlay1 = <PGDN> };
+    key <AD08> { overlay1 = <PGUP> };
+    key <AD09> { overlay1 =  <END> };
   };
 };

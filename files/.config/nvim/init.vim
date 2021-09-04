@@ -27,7 +27,7 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'ElmCast/elm-vim'
 
 " Clojure
-NeoBundle 'tpope/vim-fireplace'
+NeoBundle 'Olical/conjure', {'tag': 'v4.7.0'}
 NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'guns/vim-sexp'
 

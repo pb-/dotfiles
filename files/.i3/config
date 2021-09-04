@@ -24,7 +24,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -169,6 +169,7 @@ bindsym $mod+x exec i3lock -c 202020
 bindsym $mod+c exec --no-startup-id chromium-browser --incognito
 bindsym $mod+q workspace back_and_forth
 bindsym $mod+u exec --no-startup-id sudo pm-suspend
+bindsym $mod+t exec --no-startup-id bash -c "zenity --title 'Add TODO item' --text 'What needs to be done?' --entry --width 450 | xargs .pyenv/bin/tasks addt"
 
 bindsym $mod+o nop history_backward
 bindsym $mod+i nop history_forward

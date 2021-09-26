@@ -20,14 +20,14 @@ NeoBundle 'Shougo/deoplete.nvim'
 NeoBundle 'zchee/deoplete-jedi'
 
 " Golang
-NeoBundle 'zchee/deoplete-go', {'build': {'unix': 'make'}}
-NeoBundle 'fatih/vim-go'
+" NeoBundle 'zchee/deoplete-go', {'build': {'unix': 'make'}}
+" NeoBundle 'fatih/vim-go'
 
 " Elm
 NeoBundle 'ElmCast/elm-vim'
 
 " Clojure
-NeoBundle 'Olical/conjure', {'tag': 'v4.7.0'}
+NeoBundle 'Olical/conjure', {'tag': 'v4.23.0'}
 NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'guns/vim-sexp'
 

@@ -1,0 +1,51 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#686868"
+blue = "#98cbfe"
+cyan = "#75daa9"
+green = "#a3d572"
+magenta = "#e5b0ff"
+red = "#ffa7da"
+white = "#ffffff"
+yellow = "#efbd8b"
+
+[colors.normal]
+black = "#303030"
+blue = "#6095c5"
+cyan = "#3ba275"
+green = "#6d9e3f"
+magenta = "#ac7bde"
+red = "#d370a3"
+white = "#cfcfcf"
+yellow = "#b58858"
+
+[colors.primary]
+background = "#232323"
+foreground = "#a0a0a0"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 7.5
+
+[font.normal]
+family = "Iosevka"
+
+[[hints.enabled]]
+command = "xdg-open"
+post_processing = true
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[hints.enabled.binding]
+key = "U"
+mods = "Control|Shift"
+
+[hints.enabled.mouse]
+enabled = true
+mods = "None"
+
+[mouse]
+hide_when_typing = true

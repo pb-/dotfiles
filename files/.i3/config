@@ -170,6 +170,6 @@ bindsym $mod+t exec --no-startup-id bash -c "zenity --title 'Add TODO item' --te
 
 bindsym $mod+minus move scratchpad
 
-exec --no-startup-id caffeine
+exec --no-startup-id caffeine start -a
 
 # no laptop config after this line

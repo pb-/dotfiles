@@ -160,9 +160,9 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 3 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 3 -5% #decrease sound volume
-bindsym XF86AudioMute exec pactl set-sink-mute 3 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
 bindsym $mod+x exec i3lock -c 202020
 bindsym $mod+q workspace back_and_forth

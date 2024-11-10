@@ -81,3 +81,9 @@ let g:deoplete#enable_at_startup=1
 
 " close preview window when leaving insert mode
 autocmd InsertLeave * pclose
+
+" Default <M-{> and <M-}> doesn't seem to work
+let g:sexp_mappings = {
+\ 'sexp_flow_to_prev_open': '<M-o>',
+\ 'sexp_flow_to_next_close': '<M-p>',
+\ }

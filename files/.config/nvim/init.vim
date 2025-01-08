@@ -27,7 +27,7 @@ NeoBundle 'zchee/deoplete-jedi'
 NeoBundle 'ElmCast/elm-vim'
 
 " Clojure
-NeoBundle 'tpope/vim-fireplace'
+NeoBundle 'Olical/conjure'
 NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'guns/vim-sexp'
 

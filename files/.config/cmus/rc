@@ -1,1 +1,1 @@
-bind -f library space player-pause
+bind -f common space player-pause

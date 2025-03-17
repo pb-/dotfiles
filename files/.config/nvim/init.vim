@@ -31,6 +31,8 @@ NeoBundle 'Olical/conjure'
 NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'guns/vim-sexp'
 
+NeoBundle 'ggandor/leap.nvim'
+
 " Required:
 call neobundle#end()
 
@@ -41,6 +43,8 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
+
+lua require('leap').create_default_mappings()
 
 set termguicolors
 syntax on

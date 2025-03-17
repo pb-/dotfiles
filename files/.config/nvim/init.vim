@@ -24,7 +24,7 @@ NeoBundle 'zchee/deoplete-jedi'
 " NeoBundle 'fatih/vim-go'
 
 " Elm
-NeoBundle 'ElmCast/elm-vim'
+" NeoBundle 'ElmCast/elm-vim'
 
 " Clojure
 NeoBundle 'Olical/conjure', {'tag': 'v4.23.0'}

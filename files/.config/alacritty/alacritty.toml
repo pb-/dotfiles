@@ -50,3 +50,8 @@ regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:
 regex = "(?-u:\\b)perf-\\d{4}(?-u:\\b)"
 action = "Paste"
 binding = { key = "O", mods = "Control|Shift" }
+
+[[hints.enabled]]
+regex = "(?-u:\\b)([\\w-]+([\\./][\\w-]+)+)(?-u:\\b)"
+action = "Paste"
+binding = { key = "F", mods = "Shift|Alt" }

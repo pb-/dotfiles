@@ -47,7 +47,7 @@ binding = { key = "U", mods = "Control|Shift" }
 regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`\\\\]+"
 
 [[hints.enabled]]
-regex = "(?-u:\\b)perf-\\d{4}(?-u:\\b)"
+regex = "(?-u:\\b)perf-\\d{4}(-\\w+)*(?-u:\\b)"
 action = "Paste"
 binding = { key = "O", mods = "Control|Shift" }
 

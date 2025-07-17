@@ -170,8 +170,8 @@ bindsym $mod+c exec --no-startup-id .gyg-tools/code
 bindsym $mod+q workspace back_and_forth
 bindsym $mod+u exec --no-startup-id sudo pm-suspend
 
-bindsym $mod+o nop history_backward
-bindsym $mod+i nop history_forward
+bindsym $mod+o exec --no-startup-id .gyg-tools/switch-win
+
 bindsym $mod+minus move scratchpad
 
 exec --no-startup-id caffeine start -a

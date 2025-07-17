@@ -13,7 +13,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Add or remove your Bundles here:
 NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'ervandew/supertab'
+NeoBundle 'ervandew/supertab', {'rev': '6ce779367e2c4947367fcce401b77251d2bb47ab'}
 NeoBundle 'morhetz/gruvbox'
 
 NeoBundle 'Shougo/deoplete.nvim'

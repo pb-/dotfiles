@@ -1,1 +1,2 @@
 browser "xdg-open %u"
+ignore-article "*" "link =~ \"youtube\.com/shorts\""

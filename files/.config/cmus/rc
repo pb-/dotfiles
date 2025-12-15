@@ -1,1 +1,2 @@
 bind -f library space player-pause
+bind -f browser space player-pause

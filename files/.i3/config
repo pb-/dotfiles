@@ -166,6 +166,9 @@ bindsym $mod+x exec i3lock -c 202020
 bindsym $mod+q workspace back_and_forth
 bindsym $mod+t exec --no-startup-id bash -c "zenity --title 'Add TODO item' --text 'What needs to be done?' --entry --width 450 | xargs .pyenv/bin/tasks addt"
 
+bindsym $mod+o exec --no-startup-id ".local/bin/switch-win"
+bindsym XF86Favorites exec --no-startup-id ".local/bin/bt-toggle.sh"
+
 bindsym $mod+minus move scratchpad
 
 exec --no-startup-id caffeine start -a

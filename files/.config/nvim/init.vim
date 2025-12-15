@@ -27,7 +27,7 @@ NeoBundle 'zchee/deoplete-jedi'
 " NeoBundle 'ElmCast/elm-vim'
 
 " Clojure
-NeoBundle 'Olical/conjure', {'tag': 'v4.23.0'}
+NeoBundle 'Olical/conjure'
 NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'guns/vim-sexp'
 
@@ -44,7 +44,8 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
-lua require('leap').create_default_mappings()
+lua vim.keymap.set({'n', 'x', 'o'}, 's', '<Plug>(leap)')
+lua vim.keymap.set('n',             'S', '<Plug>(leap-from-window)')
 
 set termguicolors
 syntax on

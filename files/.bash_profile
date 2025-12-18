@@ -10,10 +10,14 @@ alias note='vim ~/n/$(date -uIns | tr -dC [:digit:] | cut -c -23)'
 alias t='pushd $(mkdir -v /tmp/$(date -Is | tr -cd [:digit:]) | cut -d \'\'' -f 2)'
 alias cat='bat -p'
 alias mutate='kubectl gyg create job --namespace sem-google-mutation --context frankfurt3 --from configmap/job-sem-google-mutation-mutate -- --run-id pb-manual-$(gdate -u +%Y%m%d%H%M%S%N) --input-path'
+alias report='kubectl gyg create job --namespace sem-ad-hoc-report --context frankfurt3 --from configmap/job-sem-ad-hoc-report-generate --'
+
 export EDITOR="$(which nvim)"
 
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
 alias vim=nvim
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+export PATH="$HOME/.bin/:$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

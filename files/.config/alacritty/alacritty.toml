@@ -71,11 +71,12 @@ hide_when_typing = true
 option_as_alt = "Both"
 
 [[hints.enabled]]
-regex = "(?-u:\\b)(perf-\\d{4}|hem-\\d{2,4})(-\\w+)*(?-u:\\b)"
+#regex = "(?-u:\\b)(perf-\\d{4}|hem-\\d{2,4})(-\\w+)*(?-u:\\b)"
+regex = "[a-zA-Z0-9_/.~-]{4,}"
 action = "Paste"
 binding = { key = "O", mods = "Control|Shift" }
 
 [[hints.enabled]]
-regex = "(?-u:\\b)([\\w-]+([\\./][\\w-]+)+)(?-u:\\b)"
+regex = "\\.?(?-u:\\b)([\\w-]+([\\./][\\w-]+)+)(?-u:\\b)"
 action = "Paste"
 binding = { key = "F", mods = "Shift|Alt" }

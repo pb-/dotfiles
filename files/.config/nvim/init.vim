@@ -44,7 +44,9 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
-lua require('leap').create_default_mappings()
+lua vim.keymap.set({'n', 'x', 'o'}, 's', '<Plug>(leap)')
+lua vim.keymap.set('n',             'S', '<Plug>(leap-from-window)')
+
 
 set termguicolors
 syntax on

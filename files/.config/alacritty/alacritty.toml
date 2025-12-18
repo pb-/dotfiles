@@ -39,18 +39,12 @@ command = "xdg-open"
 post_processing = true
 regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
 mouse.enabled = true
+binding = { key = "U", mods = "Control|Shift" }
 
 [[hints.enabled]]
 action = "Paste"
 regex = "[a-zA-Z0-9_/.-]{4,}"
-
-[hints.enabled.binding]
-key = "O"
-mods = "Control|Shift"
-
-[hints.enabled.mouse]
-enabled = true
-mods = "None"
+binding = { key = "O", mods = "Control|Shift" }
 
 [mouse]
 hide_when_typing = true

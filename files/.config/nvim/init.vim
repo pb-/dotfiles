@@ -16,6 +16,8 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'ervandew/supertab', {'rev': '8705ae0e43b34339c06328fa6dab24ecaf21aab6'}
 NeoBundle 'morhetz/gruvbox'
 
+NeoBundle 'nvim-treesitter/nvim-treesitter'
+
 NeoBundle 'Shougo/deoplete.nvim'
 NeoBundle 'zchee/deoplete-jedi'
 

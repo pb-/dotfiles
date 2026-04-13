@@ -6,3 +6,4 @@
 "\e[A":""
 "\eOB":""
 "\e[B":""
+set enable-bracketed-paste off
